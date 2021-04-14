@@ -6,6 +6,11 @@ defmodule Sample.Enum do
     def first_match([head | _]), do: head
     def first_match([]), do: nil
     def add(list, val \\ 0) do
+    trace(val)
         [val | list]
+    end
+
+    defp trace(string) do
+        IO.puts("The value passed in was #{string}")
     end
 end
