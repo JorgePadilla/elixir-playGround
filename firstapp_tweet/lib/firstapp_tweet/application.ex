@@ -10,6 +10,7 @@ defmodule FirstappTweet.Application do
     children = [
       # Starts a worker by calling: FirstappTweet.Worker.start_link(arg)
       # {FirstappTweet.Worker, arg}
+      PluralsightTweet.Scheduler
     ]
 
     # See https://hexdocs.pm/elixir/Supervisor.html
