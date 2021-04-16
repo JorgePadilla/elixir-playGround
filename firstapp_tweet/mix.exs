@@ -15,7 +15,8 @@ defmodule FirstappTweet.MixProject do
   def application do
     [
       extra_applications: [:logger],
-      mod: {FirstappTweet.Application, []}
+      mod: {FirstappTweet.Application, []},
+
     ]
   end
 
@@ -23,7 +24,8 @@ defmodule FirstappTweet.MixProject do
   defp deps do
     [
       {:quantum, "~> 3.3"},
-      {:credo, "~> 1.5"}
+      {:credo, "~> 1.5"},
+      {:extwitter, "~> 0.12.2"}
       # {:dep_from_hexpm, "~> 0.3.0"},
       # {:dep_from_git, git: "https://github.com/elixir-lang/my_dep.git", tag: "0.1.0"}
     ]
