@@ -20,7 +20,12 @@ defmodule Sample.Enum do
     def map([hd | tl], f) do
         [f.(hd) | map(tl, f)]
     end
-        
+
+    def each([head | tail]) do
+        IO.puts(head)
+        each(tail)
+    end
+
     defp trace(string) do
         IO.puts("The value passed in was #{string}")
     end
