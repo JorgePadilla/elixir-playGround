@@ -23,7 +23,7 @@ defmodule FirstappTweet.MixProject do
   # Run "mix help deps" to learn about dependencies.
   defp deps do
     [
-      {:quantum, "~> 3.3"},
+      {:quantum, "~> 2.4"},
       {:credo, "~> 1.5"},
       {:extwitter, "~> 0.12.2"}
       # {:dep_from_hexpm, "~> 0.3.0"},

@@ -9,7 +9,7 @@ defmodule PluralsightTweet.TweetServer do
         {:ok, %{}}
     end
 
-    def handle_cast({:tweet, tweet} _) do
+    def handle_cast({:tweet, tweet}, _) do
         PluralsightTweet.Tweet.send(tweet)
         {:noreply, %{}}
     end

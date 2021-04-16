@@ -10,13 +10,14 @@ defmodule FirstappTweet.Application do
     children = [
       # Starts a worker by calling: FirstappTweet.Worker.start_link(arg)
       # {FirstappTweet.Worker, arg}
-      PluralsightTweet.TweetServer,
-      PluralsightTweet.Scheduler
+    #   PluralsightTweet.TweetServer,
+    #   PluralsightTweet.Scheduler
     ]
 
     # See https://hexdocs.pm/elixir/Supervisor.html
     # for other strategies and supported options
     opts = [strategy: :one_for_one, name: FirstappTweet.Supervisor]
     Supervisor.start_link(children, opts)
+    
   end
 end
